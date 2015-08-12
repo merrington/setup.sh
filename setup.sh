@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Certain Ruby gems with C extensions require GCC
 xcode-select --install
