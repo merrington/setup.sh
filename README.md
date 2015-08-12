@@ -1,9 +1,7 @@
 # setup.sh
 First-time developer machine setup script.
 
-# Instructions
-
-## Step 1. Install prerequisite software
+# Step 1. Install prerequisite software
 
 First, make sure you have the following installed on your machine:
 
@@ -12,5 +10,6 @@ First, make sure you have the following installed on your machine:
 
 Note: after installing Postgres App, open it up (it appears in the top right of status bar), go to "Preferences" and check the box to "Start Postgres automatically after login".
 
-## Step 2. Run the setup.sh script
+# Step 2. Run the setup.sh script
 
+    curl https://raw.githubusercontent.com/wealthsimple/setup.sh/master/setup.sh | bash
