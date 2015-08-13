@@ -10,8 +10,14 @@ First, make sure you have the following installed on your machine:
 
 Note: after installing Postgres App, open it up (it appears in the top right of status bar), go to "Preferences" and check the box to "Start Postgres automatically after login".
 
-# Step 2. Run the setup.sh script
+# Step 2. Install Xcode command line tools
 
-Open Terminal.app (Applications > Utilities > Terminal), paste in the following line, and press the Return key. It may take ~10 minutes to run:
+Open Terminal (Applications > Utilities > Terminal), paste in the following, and press the Return key:
 
-    curl https://raw.githubusercontent.com/wealthsimple/setup.sh/master/setup.sh | bash
+    xcode-select --install
+
+# Step 3. Run the setup.sh script
+
+Open Terminal, paste in the following line, and press the Return key. It may take ~10 minutes to run:
+
+    curl -fsSL https://raw.githubusercontent.com/wealthsimple/setup.sh/master/setup.sh | bash

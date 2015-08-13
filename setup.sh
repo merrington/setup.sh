@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
 
-# Certain Ruby gems with C extensions require GCC
-xcode-select --install
-
 # Install Homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
 
 # Install Redis and start it on boot
 brew install redis
