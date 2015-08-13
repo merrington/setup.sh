@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# Install Homebrew
+# Install & update Homebrew
 curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
+brew update
 
 # Install Redis and start it on boot
 brew install redis
