@@ -37,3 +37,5 @@ psql --command="CREATE DATABASE wealthsimple_development;"
 psql --dbname=wealthsimple_development --command="CREATE EXTENSION IF NOT EXISTS hstore;"
 psql --command="CREATE DATABASE wealthsimple_test;"
 psql --dbname=wealthsimple_test --command="CREATE EXTENSION IF NOT EXISTS hstore;"
+
+echo "✨ 💥 Done! 💥 ✨"
