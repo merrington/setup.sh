@@ -12,6 +12,6 @@ Note: after installing Postgres App, open it up (it appears in the top right of 
 
 # Step 2. Run the setup.sh script
 
-Open Terminal.app, paste in the following line, and press the Return key:
+Open Terminal.app (Applications > Utilities > Terminal), paste in the following line, and press the Return key. It may take ~10 minutes to run:
 
     curl https://raw.githubusercontent.com/wealthsimple/setup.sh/master/setup.sh | bash
