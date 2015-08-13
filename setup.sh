@@ -20,7 +20,10 @@ source ~/.bash_profile
 
 # Install the Ruby versions we use
 rbenv install 2.2.2
-rbenv global 2.2.2
+rbenv install 2.1.5
+rbenv shell 2.2.2
+gem install bundle
+rbenv shell 2.1.5
 gem install bundle
 rbenv rehash
 
