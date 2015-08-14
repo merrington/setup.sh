@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+DATABASE_NAMES=("wealthsimple_development" "wealthsimple_test")
+RUBY_VERSIONS=("2.1.5" "2.2.2")
+
 # Install & update Homebrew
 curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
 brew update
@@ -22,10 +25,10 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 createuser -s postgres
 
 # Create databases and hstore extensions
-psql --username=postgres --command="CREATE DATABASE wealthsimple_development;"
-psql --dbname=wealthsimple_development --command="CREATE EXTENSION IF NOT EXISTS hstore;"
-psql --username=postgres --command="CREATE DATABASE wealthsimple_test;"
-psql --dbname=wealthsimple_test --command="CREATE EXTENSION IF NOT EXISTS hstore;"
+for database_name in "${DATABASE_NAMES[@]}"; do
+  psql --username=postgres --command="CREATE DATABASE ${database_name};"
+  psql --dbname=$database_name --command="CREATE EXTENSION IF NOT EXISTS hstore;"
+done
 
 # Install rbenv for Ruby version management
 brew install rbenv ruby-build
@@ -34,12 +37,11 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 
 # Install the Ruby versions we use
-rbenv install 2.2.2
-rbenv install 2.1.5
-rbenv shell 2.2.2
-gem install bundle
-rbenv shell 2.1.5
-gem install bundle
+for ruby_version in "${RUBY_VERSIONS[@]}"; do
+  rbenv install $ruby_version
+  rbenv shell $ruby_version
+  gem install bundle
+done
 rbenv rehash
 
 echo "✨ 💥 Done! 💥 ✨"
