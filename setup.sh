@@ -22,9 +22,9 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 createuser -s postgres
 
 # Create databases and hstore extensions
-psql --command="CREATE DATABASE wealthsimple_development;"
+psql --username=postgres --command="CREATE DATABASE wealthsimple_development;"
 psql --dbname=wealthsimple_development --command="CREATE EXTENSION IF NOT EXISTS hstore;"
-psql --command="CREATE DATABASE wealthsimple_test;"
+psql --username=postgres --command="CREATE DATABASE wealthsimple_test;"
 psql --dbname=wealthsimple_test --command="CREATE EXTENSION IF NOT EXISTS hstore;"
 
 # Install rbenv for Ruby version management
