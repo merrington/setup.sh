@@ -6,10 +6,7 @@ First-time developer machine setup script.
 First, make sure you have the following installed on your machine:
 
 1. Heroku Toolbelt: https://toolbelt.heroku.com/
-2. Postgres: http://postgresapp.com/ (drag and drop it to your "Applications" folder)
-3. Open up Postgres. Click on the icon in the status bar, go to "Preferences" and check the box to "Start Postgres automatically after login".
-4. Open Terminal (Applications > Utilities > Terminal), paste in `xcode-select --install`, and press the Return key.
-    
+2. Open Terminal (Applications > Utilities > Terminal), type in `xcode-select --install`, and press the Return key.
 
 ## Step 2. Run the setup.sh script
 
