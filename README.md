@@ -6,7 +6,9 @@ First-time developer machine setup script.
 First, make sure you have the following installed on your machine:
 
 1. Heroku Toolbelt: https://toolbelt.heroku.com/
-2. Open Terminal (Applications > Utilities > Terminal), type in `xcode-select --install`, and press the Return key.
+2. Xcode command line tools:
+  - Open Terminal (Applications > Utilities > Terminal)
+  - Type in `xcode-select --install` and press the Return key.
 
 ## Step 2. Run the setup.sh script
 
