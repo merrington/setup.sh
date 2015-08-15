@@ -3,6 +3,11 @@
 DATABASE_NAMES=("wealthsimple_development" "wealthsimple_test")
 RUBY_VERSIONS=("2.1.5" "2.2.2")
 
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  echo "Error: This script only works on OS X."
+  exit 1
+fi
+
 # Install & update Homebrew
 curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
 brew update
