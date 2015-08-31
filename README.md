@@ -1,6 +1,11 @@
 # setup.sh
 First-time developer machine setup script.
 
+This script assumes that:
+
+1. your operating system is Mac OS X, and 
+2. your default shell is bash (this should be the case for OS X)
+
 ## Step 1. Install prerequisite software
 
 First, make sure you have the following installed on your machine:
