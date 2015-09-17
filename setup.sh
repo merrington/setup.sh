@@ -51,7 +51,10 @@ done
 
 echo "==========Install node.js and node packages=========="
 brew install node
-npm install phantomjs
+
+echo "==========Install phantomjs 1.9.8=========="
+# Phantomjs version 2.0+ is not yet supported by some gems (Poltergeist)
+brew install homebrew/versions/phantomjs198
 
 # 3 beep salute
 for i in `seq 3`; do
