@@ -49,9 +49,9 @@ for database_name in "${DATABASE_NAMES[@]}"; do
   psql --dbname=$database_name --command="CREATE EXTENSION IF NOT EXISTS hstore;"
 done
 
-echo "==========Install node.js=========="
+echo "==========Install node.js and node packages=========="
 brew install node
-echo "If you see an error from node.js above run: sudo brew postinstall node"
+npm install phantomjs
 
 # 3 beep salute
 for i in `seq 3`; do
