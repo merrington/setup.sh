@@ -26,6 +26,9 @@ brew install postgres
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
+echo "==========Installing Ruby prerequisites=========="
+brew install openssl libyaml libffi
+
 echo "==========Install rbenv for Ruby version management=========="
 brew install rbenv ruby-build
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
