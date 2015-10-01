@@ -20,3 +20,11 @@ First, make sure you have the following installed on your machine:
 Open Terminal, paste in the following line, and press the Return key. It may take ~10 minutes to run:
 
     curl -fsSL https://raw.githubusercontent.com/wealthsimple/setup.sh/master/setup.sh | bash
+
+## Troubleshooting
+
+### OS X 10.11
+
+If you get the error `configure: error: readline library not found` while installing Postgres, try running the following, and rerunning setup.sh afterwards:
+
+    sudo xcode-select -s /Library/Developer/CommandLineTools
