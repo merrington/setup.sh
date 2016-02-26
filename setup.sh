@@ -28,6 +28,8 @@ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
 echo "==========Installing Ruby prerequisites=========="
 brew install openssl libyaml libffi
+# Create symlinks for OpenSSL to prevent `error: 'openssl/ssl.h' file not found`
+brew link --force openssl
 
 echo "==========Install rbenv for Ruby version management=========="
 brew install rbenv ruby-build
