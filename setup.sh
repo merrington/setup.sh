@@ -12,6 +12,9 @@ echo "==========Install & update Homebrew=========="
 curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install' | ruby
 brew update
 
+echo "==========Installing git=========="
+brew install git
+
 echo "==========Allow us to create custom launch agents=========="
 mkdir -p ~/Library/LaunchAgents
 
