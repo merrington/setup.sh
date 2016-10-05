@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DATABASE_NAMES=("wealthsimple_development" "wealthsimple_test")
-RUBY_VERSIONS=("2.1.5" "2.2.2", "2.2.3", "2.3.0")
+RUBY_VERSIONS=("2.1.5" "2.2.2", "2.2.3", "2.3.0", "2.3.1")
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
   echo "==========Error: This script only works on OS X.=========="
