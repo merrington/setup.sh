@@ -58,7 +58,7 @@ for database_name in "${DATABASE_NAMES[@]}"; do
   psql --dbname=$database_name --command="CREATE EXTENSION IF NOT EXISTS hstore;"
 done
 
-echo "==========Install n for node.js version management and node versions we use=========="
+echo "==========Install node.js and node version management tools=========="
 brew install n
 for node_version in "${NODE_VERSIONS[@]}"; do
   n $node_version
