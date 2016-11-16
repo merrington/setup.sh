@@ -2,6 +2,7 @@
 
 DATABASE_NAMES=("wealthsimple_development" "wealthsimple_test")
 RUBY_VERSIONS=("2.1.5" "2.2.2", "2.2.3", "2.3.0", "2.3.1")
+NODE_VERSIONS=("7.1.0")
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
   echo "==========Error: This script only works on OS X.=========="
@@ -57,9 +58,13 @@ for database_name in "${DATABASE_NAMES[@]}"; do
   psql --dbname=$database_name --command="CREATE EXTENSION IF NOT EXISTS hstore;"
 done
 
-echo "==========Install node.js and node packages=========="
-brew install node
-brew install nvm
+echo "==========Install n for node.js version management and node versions we use=========="
+brew install n
+for node_version in "${NODE_VERSIONS[@]}"; do
+  n $node_version
+done
+npm install -g avn avn-n
+avn setup
 
 echo "==========Install phantomjs 1.9.2=========="
 # Phantomjs version 2.0+ is not yet supported by some gems (Poltergeist), and
