@@ -28,3 +28,10 @@ Open Terminal, paste in the following line, and press the Return key. It may tak
 If you get the error `configure: error: readline library not found` while installing Postgres, try running the following, and rerunning setup.sh afterwards:
 
     sudo xcode-select -s /Library/Developer/CommandLineTools
+
+### PostgreSQL issues
+
+If you get an error that Postgres is not running, try running the following commands:
+
+    initdb -D /usr/local/var/postgres/data
+    pg_ctl -D /usr/local/var/postgres/data -l logfile start
