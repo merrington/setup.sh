@@ -8,12 +8,10 @@ This script assumes that:
 
 ## Step 1. Install prerequisite software
 
-First, make sure you have the following installed on your machine:
+First, make sure you have Xcode command line tools (or Xcode) installed:
 
-1. Heroku CLI: https://devcenter.heroku.com/articles/heroku-cli
-2. Xcode command line tools (or Xcode):
-  - Open Terminal (Applications > Utilities > Terminal)
-  - Type in `xcode-select --install` and press the Return key.
+1. Open Terminal (Applications > Utilities > Terminal)
+2. Type in `xcode-select --install` and press the Return key.
 
 ## Step 2. Run the setup.sh script
 
