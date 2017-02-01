@@ -12,6 +12,7 @@ First, make sure you have Xcode command line tools (or Xcode) installed:
 
 1. Open Terminal (Applications > Utilities > Terminal)
 2. Type in `xcode-select --install` and press the Return key.
+3. Once installed, type in `sudo xcodebuild -license` to accept the license.
 
 ## Step 2. Run the setup.sh script
 
