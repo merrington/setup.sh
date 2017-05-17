@@ -66,11 +66,6 @@ done
 npm install -g avn avn-n
 avn setup
 
-echo "==========Install phantomjs 1.9.2=========="
-# Phantomjs version 2.0+ is not yet supported by some gems (Poltergeist), and
-# versions >1.9.2 fail on OSX versions later than Yosemite.
-brew install homebrew/versions/phantomjs192
-
 # 3 beep salute
 for i in `seq 3`; do
     echo -ne '\007'
