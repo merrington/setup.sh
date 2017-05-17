@@ -34,3 +34,9 @@ If you get an error that Postgres is not running, try running the following comm
 
     initdb -D /usr/local/var/postgres/data
     pg_ctl -D /usr/local/var/postgres/data -l logfile start
+
+### `Permission denied` on `/usr/local` directories
+
+If you get this error, take recursive ownership of it:
+
+    sudo chown -R $USER:admin /usr/local
