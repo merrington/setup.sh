@@ -66,6 +66,9 @@ done
 npm install -g avn avn-n
 avn setup
 
+echo "==========Installing phantomjs and other frequently used CLI tools=========="
+brew install phantomjs imagemagick graphviz
+
 # 3 beep salute
 for i in `seq 3`; do
     echo -ne '\007'
