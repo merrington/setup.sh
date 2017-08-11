@@ -3,7 +3,7 @@ First-time developer machine setup script.
 
 This script assumes that:
 
-1. your operating system is Mac OS X, and 
+1. your operating system is Mac OS X, and
 2. your default shell is bash (this should be the case for OS X)
 
 ## Step 1. Install prerequisite software
@@ -40,3 +40,11 @@ If you get an error that Postgres is not running, try running the following comm
 If you get this error, take recursive ownership of it:
 
     sudo chown -R $USER:admin /usr/local
+
+## XCode License Acceptance issues
+
+If you get the error `xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance`, your installed instance may be invalid. If you download XCode, you could switch it to point to the application itself with the following:
+
+    sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
+After that, `sudo xcodebuild -license` will work.
