@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 DATABASE_NAMES=("wealthsimple_development" "wealthsimple_test")
-RUBY_VERSIONS=("2.3.0", "2.4.0")
+RUBY_VERSIONS=("2.3.5", "2.4.2")
 NODE_VERSIONS=("6.0.0", "7.1.0")
 
 if [[ "$OSTYPE" != "darwin"* ]]; then
