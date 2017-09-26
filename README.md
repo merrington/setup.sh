@@ -10,9 +10,10 @@ This script assumes that:
 
 First, make sure you have Xcode command line tools (or Xcode) installed:
 
-1. Open Terminal (Applications > Utilities > Terminal)
-2. Type in `xcode-select --install` and press the Return key.
-3. Once installed, type in `sudo xcodebuild -license` to accept the license.
+1. Install Xcode (MacOS IDE) from the AppStore - this takes 20+ minutes.
+2. Open Terminal (Applications > Utilities > Terminal)
+3. Type in `xcode-select --install` and press the Return key.
+4. Once installed, type in `sudo xcodebuild -license` to accept the license.
 
 ## Step 2. Run the setup.sh script
 
