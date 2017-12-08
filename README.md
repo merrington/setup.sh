@@ -40,7 +40,7 @@ If you get an error that Postgres is not running, try running the following comm
 
 If you get this error, take recursive ownership of it:
 
-    sudo chown -R $USER:admin /usr/local
+    sudo chown -R $USER:admin /usr/local/*
 
 ## XCode License Acceptance issues
 
